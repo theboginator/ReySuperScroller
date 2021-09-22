@@ -35,7 +35,7 @@ class MimimalArcade(arcade.Window):
 
     def __init__(self, image_name:str, screen_w:int = 1024, screen_h:int =1024):
         super().__init__(screen_w, screen_h)
-        self.image_path = pathlib.Path.cwd() / 'Assets' / image_name
+        self.image_path = pathlib.Path.cwd() / 'assets' / image_name
         self.pict = None
         self.direction = MoveEnum.NONE
         self.pictlist = None
